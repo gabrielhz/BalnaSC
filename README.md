@@ -33,7 +33,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/umUDwY82C98GDB5vPvhA4p/BalnaSC?node-id=0%3A1). Lembrando que você precisa ter uma conta no [Figma](http://figma.com/) para acessá-lo.
+Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/umUDwY82C98GDB5vPvhA4p/BalnaSC?node-id=2%3A3). Lembrando que você precisa ter uma conta no [Figma](http://figma.com/) para acessá-lo.
 
 ## 🤝 Colaboradores
 
