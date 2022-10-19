@@ -1,5 +1,5 @@
 #page-landing {
-  background: linear-gradient(329.54deg, #ffffff 100%, 100%);
+  background: #ffffff;
 
   text-align: center;
   min-height: 100vh;
@@ -28,7 +28,7 @@ h1,
 
 main h1 {
   animation-delay: 150ms;
-  font-size: clamp(4rem, 8vw, 8.4rem);
+  font-size: clamp(3rem, 7vw, 7rem);
 }
 
   .visit p {

@@ -29,13 +29,12 @@ fieldset legend {
     font-weight: 700;
 
     border-bottom: 1px solid #d3e2e5;
-    margin-bottom: 4rem; /* prenchimento fora da caixa*/
     padding-bottom: 2.4rem; /* prenchimento dentro da caixa*/
 
 
 }
 
-.input-block + .input-block {
+.input-block {
     margin-top: 2.4rem;
 
 }

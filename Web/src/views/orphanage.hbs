@@ -33,7 +33,7 @@
   <div id="page-orphanage">
     <aside class="animate-right sidebar">
 
-      <img src="/images/map-marker.svg" alt="Happy">
+      <img src="/images/mapPoint.svg" alt="Happy">
 
       <footer>
         <button onclick="history.back()">
@@ -71,14 +71,16 @@
 
           <hr />
 
-          <h2>Instruções para Visitas</h2>
+          <h2>Condições de Balneabilidade</h2>
 
-          <p>{{orphanage.instructions}}
+          <p>Avaliação de qualidade da água de acordo com o IMA
+(Instituto do Meio Ambiente de Santa Catarina)
           </p>
 
           <div class="open-details">
             <div class="hour">
               <img src="/images/clock.svg" alt="Horários" />
+              <p>Data da ultima avaliação:</p>
               {{orphanage.opening_hours}}
             </div>
 
@@ -86,22 +88,17 @@
 
             <div class="open-on-weekends open">
               <img src="/images/info.svg" alt="Informações" />
-              Atendemos fim de semana
+              Própria para banho
             </div>
             {{else}}
             <div class="open-on-weekends closed">
               <img src="/images/info-red.svg" alt="Informações" />
-              Não atendemos fim de semana
+              Imprópria para banho
             </div>
             {{/if}}
 
           </div>
 
-          <a href="https://api.whatsapp.com/send?l=pt_BR&phone={{orphanage.whatsapp}}&text=Oi, quero conversar sobre visitas no {{orphanage.name}}" target="_blank"
-            class="primary-button" type="button">
-            <img src="/images/whatsapp.svg" alt="Chamar no whatsapp" />
-            Entrar em contato
-          </a>
         </div>
 
       </div>

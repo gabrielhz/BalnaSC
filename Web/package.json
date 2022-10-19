@@ -8,7 +8,8 @@
 
   },
   "keywords": [],
-  "author": "",
+  "author": "Dionatan de Lima Moreira",
+  "link": "https://www.linkedin.com/in/dionatanlm/",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",

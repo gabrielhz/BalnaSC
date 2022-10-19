@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adicionar um orfanato | Happy</title>
+    <title>Adicionar um local | BalnaSC</title>
 
     <link
       rel="stylesheet"
@@ -19,7 +19,7 @@
       crossorigin=""
     ></script>
 
-    <link rel="icon" href="/images/logo-icon.png" />
+    <link rel="icon" href="/images/logoIcon.png" />
 
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/animations.css" />
@@ -37,7 +37,7 @@
   <body>
     <div id="page-create-orphanage">
       <aside class="animate-right sidebar">
-        <img src="/images/map-marker.svg" alt="Happy" />
+        <img src="/images/mapPoint.svg" alt="Happy" />
 
         <footer>
           <button onclick="history.back()">
@@ -75,10 +75,7 @@
               <textarea id="about" name="about" required></textarea>
             </div>
 
-            <div class="input-block">
-              <label for="whatsapp">Numero de whatsapp</label>
-              <input id="whatsapp" name="whatsapp" required />
-            </div>
+
 
             <div class="input-block images">
               <label for="images">Foto</label>
@@ -108,24 +105,16 @@
           </fieldset>
 
           <fieldset>
-            <legend>Visitação</legend>
+            <legend>Balneabilidade</legend>
+
 
             <div class="input-block">
-              <label for="instructions">Instruções</label>
-              <textarea
-                id="instructions"
-                name="instructions"
-                required
-              ></textarea>
-            </div>
-
-            <div class="input-block">
-              <label for="opening_hours">Horário das visitas</label>
+              <label for="opening_hours">Data da avaliação</label>
               <input id="opening_hours" name="opening_hours" required />
             </div>
 
             <div class="input-block">
-              <label for="open_on_weekends">Atende fim de semana?</label>
+              <label for="open_on_weekends">Qual a qualidade da água?</label>
               <input
                 type="hidden"
                 id="open_on_weekends"
@@ -138,11 +127,11 @@
                 <button data-value="1"
                 onclick="toggleSelect(event) "
                 type="button" 
-                class="active">Sim</button>
+                class="active">Própria</button>
                 <button data-value="0"
                 onclick="toggleSelect(event) "
                 type="button"
-                >Não</button>
+                >Imprópria</button>
               </div>
 
               <button type="submit" class="primary-button">Confirmar</button>

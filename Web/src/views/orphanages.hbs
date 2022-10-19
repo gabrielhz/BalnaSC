@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Localize um orfanato | Happy</title>
+  <title>Localize um praia | BalnaSC</title>
 
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -16,7 +16,7 @@
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin=""></script>
 
-  <link rel="icon" href="/images/logo-icon.png" />
+  <link rel="icon" href="/images/logoIcon.png" />
 
   <link rel="stylesheet" href="/css/main.css" />
   <link rel="stylesheet" href="/css/animations.css" />
@@ -32,14 +32,31 @@
       <header>
         <img src="/images/logoC.svg" alt="Happy" />
 
-        <h2>Selecione a praia </h2>
+        <h2>Escolha um local </h2>
 
-        <p>Praias <span id="propria">PRÓPRIAS</span> para banho em verde</p>
-        <p>Praias <span id="impropria">IMPRÓPRIAS</span> para banho em vermelho</p>
+<div class="images-upload" id="images">
+        <div class="input-block">
+              <input id="name" name="name" required />
+        <span>
+            <img src="/images/search.svg" alt="Pesquisar"/>
+        </span>
+        </div>
+      </div>
+
+        <p id="propria">Veja as praias que estão próprias e impróprias para banho.</p>
+
+        <div class="banho">
+          <img src="/images/mapProper.svg" alt="">
+          <p>Própria para banho</p>
+        </div>
+        <div class="banho">
+          <img src="/images/mapImproper.svg" alt="">
+          <p>Imprópria para banho</p>
+        </div>
       </header>
 
       <footer>
-        <strong>Praias</strong>
+        <strong>Balneabilidade</strong>
         <p>Santa Catarina</p>
       </footer>
     </aside>
