@@ -9,9 +9,7 @@ function execute(db) {
             lng TEXT,
             name TEXT,
             about TEXT,
-            whatsapp TEXT,
             images TEXT,
-            instructions TEXT,
             opening_hours TEXT,
             open_on_weekends TEXT
             );

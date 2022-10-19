@@ -8,8 +8,17 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png')
 
 
 //create icon
+
+
+
 const icon = L.icon({
-    iconUrl: "/images/map-marker.svg",
+    iconUrl: "/images/mapProper.svg",
+    iconSize: [58,68],
+    iconAnchor: [29, 68], 
+})
+
+const icon2 = L.icon({
+    iconUrl: "/images/mapImproper.svg",
     iconSize: [58,68],
     iconAnchor: [29, 68], 
 })
@@ -31,8 +40,16 @@ map.on('click', (event) => {
 
 
     //add icon layer 
+
+    console.log(open_on_weekends.value)
+
+    if(open_on_weekends.value == 1){
     marker = L.marker([lat, lng], {icon})
     .addTo(map)
+    } else {
+    marker = L.marker([lat, lng], {icon2})
+    .addTo(map)
+    }
 })
 
 // Adicionar campo de fotos
