@@ -62,7 +62,8 @@
 
           <div class="map-container">
             <div id="mapid"></div>
-            <span data-lat="{{ orphanage.lat }}" data-lng="{{ orphanage.lng }}"></span>
+            <span data-lat="{{ orphanage.lat }}" data-lng="{{ orphanage.lng }}"
+              data-open_on_weekends="{{ orphanage.open_on_weekends }}"></span>
             <footer>
               <a target="_blank" href="https://maps.google.com/mobile?q={{orphanage.lat}},{{orphanage.lng}}&z=15">Ver
                 rotas no Google Maps</a>
@@ -74,7 +75,7 @@
           <h2>Condições de Balneabilidade</h2>
 
           <p>Avaliação de qualidade da água de acordo com o IMA
-(Instituto do Meio Ambiente de Santa Catarina)
+            (Instituto do Meio Ambiente de Santa Catarina)
           </p>
 
           <div class="open-details">
