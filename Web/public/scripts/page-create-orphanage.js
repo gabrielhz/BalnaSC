@@ -9,24 +9,22 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png')
 
 //create icon
 
+var LeafIcon = L.Icon.extend({
+    options: {
+        iconSize: [58,68],
+        iconAnchor: [29, 68], 
+    }
+});
 
+var greenIcon = new LeafIcon({iconUrl: "/images/mapProper.svg"}),
+    redIcon = new LeafIcon({iconUrl: "/images/mapImproper.svg"})
 
-const icon = L.icon({
-    iconUrl: "/images/mapProper.svg",
-    iconSize: [58,68],
-    iconAnchor: [29, 68], 
-})
-
-const icon2 = L.icon({
-    iconUrl: "/images/mapImproper.svg",
-    iconSize: [58,68],
-    iconAnchor: [29, 68], 
-})
 
 let marker;
 
+const weekValue = open_on_weekends.value;
 // create and add marker
-
+console.log(weekValue)
 map.on('click', (event) => {
 
     const lat = event.latlng.lat;
@@ -38,16 +36,15 @@ map.on('click', (event) => {
     // remove icon
     marker && map.removeLayer(marker)
 
-
     //add icon layer 
 
     console.log(open_on_weekends.value)
 
     if(open_on_weekends.value == 1){
-    marker = L.marker([lat, lng], {icon})
+    marker = L.marker([lat, lng], {icon: greenIcon})
     .addTo(map)
     } else {
-    marker = L.marker([lat, lng], {icon2})
+    marker = L.marker([lat, lng], {icon: redIcon})
     .addTo(map)
     }
 })
@@ -121,3 +118,4 @@ function validade(event){
         alert('Selecione um ponto no mapa')
     }
 }
+
