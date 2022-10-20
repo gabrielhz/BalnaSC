@@ -16,7 +16,8 @@ var greenIcon = new LeafIcon({iconUrl: "/images/mapProper.svg"}),
   redIcon = new LeafIcon({iconUrl: "/images/mapImproper.svg"})
 
 
-function addMarker({id, open_on_weekends, name, lat, lng}) {
+function addMarker({id, name, open_on_weekends, lat, lng}) {
+
 
   // create popup overlay
   const popup = L.popup({
@@ -28,11 +29,19 @@ function addMarker({id, open_on_weekends, name, lat, lng}) {
 
 // create and add marker
 
+
+  if(open_on_weekends == 1){
   L
   .marker([lat, lng], {icon: greenIcon})
   .addTo(map)
   .bindPopup(popup);
-  } 
+  } else {
+    L
+  .marker([lat, lng], {icon: redIcon})
+  .addTo(map)
+  .bindPopup(popup);
+  }
+}
 
 
 const orphanagesSpan = document.querySelectorAll('.orphanages span')
