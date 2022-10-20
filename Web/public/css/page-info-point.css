@@ -1,6 +1,6 @@
-#page-orphanage {
+#page-info-point {
     display: flex;
-    min-height: 100vh;    
+    min-height: 100vh;
 }
 
 
@@ -21,7 +21,7 @@ main {
     overflow: hidden;
 }
 
-.orphanage-details > img {
+.orphanage-details>img {
     width: 100%;
     height: 30rem;
     object-fit: cover;
@@ -49,7 +49,8 @@ main {
     transition: opacity 0.2s;
 }
 
-.images button:hover, .images button.active {
+.images button:hover,
+.images button.active {
     opacity: 1;
 }
 
@@ -134,6 +135,7 @@ main {
     border: 1px solid #A1E9C5;
     color: #37C77F;
 }
+
 .open-on-weekends.closed {
 
     background: linear-gradient(154.16deg, #fcf0f4 7.85%, #FFFFFF 91.03%);

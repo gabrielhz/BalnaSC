@@ -25,7 +25,7 @@ module.exports = {
         orphanage.open_on_weekends == true;
       }
 
-      return res.render("orphanage", { orphanage });
+      return res.render("info-point", { orphanage });
     } catch (error) {
       console.log(error);
       return res.send("Erro no banco de dados");
@@ -36,7 +36,7 @@ module.exports = {
     try {
       const db = await Database;
       const orphanages = await db.all("SELECT * FROM orphanages");
-      return res.render("orphanages", { orphanages });
+      return res.render("main", { orphanages });
     } catch (error) {
       console.log(error);
       return res.send("Erro no banco de dados!");
@@ -44,7 +44,7 @@ module.exports = {
   },
 
   createOrphanage(req, res) {
-    return res.render("create-orphanage");
+    return res.render("add-point");
   },
 
   async saveOrphanage(req, res) {
@@ -71,7 +71,7 @@ module.exports = {
       });
 
       //redirecionamento
-      return res.redirect("/orphanages");
+      return res.redirect("/main");
     } catch (error) {
       console.log(error);
       return res.send("Erro no banco de dados!");

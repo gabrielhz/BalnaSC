@@ -20,28 +20,28 @@
 
   <link rel="stylesheet" href="/css/main.css" />
   <link rel="stylesheet" href="/css/animations.css" />
-  <link rel="stylesheet" href="/css/page-orphanages.css" />
+  <link rel="stylesheet" href="/css/page-main.css" />
 
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
 </head>
 
 <body>
 
-  <div id="page-orphanages">
+  <div id="page-main">
     <aside class="animate-right">
       <header>
         <img src="/images/logoC.svg" alt="Happy" />
 
         <h2>Escolha um local </h2>
 
-<div class="images-upload" id="images">
-        <div class="input-block">
-              <input id="name" name="name" required />
-        <span>
-            <img src="/images/search.svg" alt="Pesquisar"/>
-        </span>
+        <div class="images-upload" id="images">
+          <div class="input-block">
+            <input id="name" name="name" required />
+            <span>
+              <img src="/images/search.svg" alt="Pesquisar" />
+            </span>
+          </div>
         </div>
-      </div>
 
         <p id="propria">Veja as praias que estão próprias e impróprias para banho.</p>
 
@@ -63,27 +63,22 @@
 
     <div id="mapid" class="animate-appear"></div>
 
-<div class="orphanages">
-{{#each orphanages}}
+    <div class="orphanages">
+      {{#each orphanages}}
 
-    <span hidden 
-      data-id="{{this.id}}"
-      data-name="{{this.name}}"
-      data-open_on_weekends="{{this.open_on_weekends}}"
-      data-lat="{{this.lat}}"
-      data-lng="{{this.lng}}"
-    ></span>
-  {{/each}}
-</div>
+      <span hidden data-id="{{this.id}}" data-name="{{this.name}}" data-open_on_weekends="{{this.open_on_weekends}}"
+        data-lat="{{this.lat}}" data-lng="{{this.lng}}"></span>
+      {{/each}}
+    </div>
 
 
-    <a href="/create-orphanage" class="create-orphanage" title="Cadastre um orfanato">
+    <a href="/add-point" class="add-point" title="Cadastre um orfanato">
       <img src="/images/plus.svg" alt="Criar orfanato" />
     </a>
   </div>
   </div>
 
-  <script src="/scripts/page-orphanages.js"> </script>
+  <script src="/scripts/page-main.js"> </script>
 
 </body>
 
