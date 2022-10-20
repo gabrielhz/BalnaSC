@@ -4,7 +4,7 @@ const path = require('path');
 const pages = require('./pages.js');
 
 
-    //iniciando o express
+//iniciando o express
 const server = express()
 server
 
@@ -20,9 +20,9 @@ server
     //rotas da aplicação template
 
     .get('/', pages.index)
-    .get('/orphanage', pages.orphanage)
-    .get('/orphanages', pages.orphanages)
-    .get('/create-orphanage', pages.createOrphanage)
+    .get('/info-point', pages.orphanage)
+    .get('/main', pages.orphanages)
+    .get('/add-point', pages.createOrphanage)
     .post('/save-orphanage', pages.saveOrphanage)
 
 //ligar o servidor

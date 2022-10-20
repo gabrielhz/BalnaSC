@@ -1,4 +1,4 @@
-#page-orphanages {
+#page-main {
   width: 100%;
   height: 100%;
 
@@ -6,7 +6,7 @@
 }
 
 #propria {
-  color: #8FA7B2; 
+  color: #8FA7B2;
 }
 
 
@@ -26,7 +26,7 @@ aside h2 {
   font: 800 clamp(2rem, 5vw, 3.6rem)/1.1 'Nunito', sans-serif;
 }
 
-aside p {´
+aside p {
   color: #8FA7B2;
   margin-top: 2.4rem;
   font: 400 1.6rem/1.5 'Nunito', sans-serif;
@@ -44,7 +44,7 @@ aside footer p {
   animation-delay: 200ms;
 }
 
-a.create-orphanage {
+a.add-point {
   position: absolute;
   right: 4rem;
   bottom: 4rem;
@@ -64,12 +64,12 @@ a.create-orphanage {
   transition: background-color 200ms;
 }
 
-a.create-orphanage:hover {
+a.add-point:hover {
   background: #17D6Eb
 }
 
 .leaflet-popup-content-wrapper {
-  margin-left:330px;
+  margin-left: 330px;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 20px;
 }
@@ -114,7 +114,7 @@ a.create-orphanage:hover {
 
 
 
-.input-block + .input-block {
+.input-block+.input-block {
   margin-top: 2.4rem;
 
 }
@@ -165,7 +165,7 @@ a.create-orphanage:hover {
   position: relative;
 }
 
-.input-block + .input-block {
+.input-block+.input-block {
   margin-top: 2.4rem;
 }
 
