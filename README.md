@@ -17,9 +17,8 @@ Segundo a OMS no mundo, 6,3% das mortes ainda são causadas por doenças decorre
 
 O BALNASC tem como motivação a informação e prevenção de demais complicações por ingestão ou contato com uma água imprópria ao banho, visando assim uma melhora na saúde pública, e consequentemente, o descongestionamento do sistema de saúde.
 
-Hackaton 2022.2 CESUSC
-
 🏆 2° Colocação 
+Hackaton 2022.2 CESUSC
 
 ## 🚀 Instalação
 Você precisará do Node.js instalado no seu computador para iniciar este aplicativo.
