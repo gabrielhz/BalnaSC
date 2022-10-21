@@ -2,9 +2,9 @@
 ![Banner Balna](https://github.com/gabrielhz/BalnaSC/blob/master/img/Balnasc.png)
 <table>
   <tr>
-    <td align="left">
-        <img src="https://github.com/gabrielhz/BalnaSC/blob/master/screenStart.PNG" width="400px;" alt="Foto do DionatanLM no GitHub"/>
-        <img src="https://github.com/gabrielhz/BalnaSC/blob/master/screenMap.PNG" width="400px;" alt="Foto do DionatanLM no GitHub"/>
+    <td align="center">
+        <img src="https://github.com/gabrielhz/BalnaSC/blob/master/screenStart.PNG" width="390px;" alt="Foto do DionatanLM no GitHub"/>
+        <img src="https://github.com/gabrielhz/BalnaSC/blob/master/screenMap.PNG" width="390px;" alt="Foto do DionatanLM no GitHub"/>
       </tr>
 </table>
 
