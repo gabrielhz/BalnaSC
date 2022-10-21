@@ -1,5 +1,12 @@
 
 ![Banner Balna](https://github.com/gabrielhz/BalnaSC/blob/master/img/Balnasc.png)
+<table>
+  <tr>
+    <td align="left">
+        <img src="https://github.com/gabrielhz/BalnaSC/blob/master/screenStart.PNG" width="489px;" alt="Foto do DionatanLM no GitHub"/>
+        <img src="https://github.com/gabrielhz/BalnaSC/blob/master/screenMap.PNG" width="489px;" alt="Foto do DionatanLM no GitHub"/>
+      </tr>
+</table>
 
 # 💻 Projeto
 
